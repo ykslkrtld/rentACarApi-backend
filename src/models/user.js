@@ -16,6 +16,7 @@ const { mongoose } = require('../configs/dbConnection')
 // User Model:
 
 const passwordEncrypt = require('../helpers/passwordEncrypt')
+const uniqueValidator = require("mongoose-unique-validator");
 
 const UserSchema = new mongoose.Schema({
 
@@ -38,7 +39,7 @@ const UserSchema = new mongoose.Schema({
         type: String,
         trim: true,
         required: [true, 'Email field must be required'],
-        unique: [true, 'There is this email. Email field must be unique'],
+        unique: true,
         // validate: [
         //     (email) => email.includes('@') && email.includes('.'),
         //     'Email type is not correct.'
