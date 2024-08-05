@@ -57,6 +57,18 @@ const UserSchema = new mongoose.Schema({
         ]
     },
 
+    firstName: {
+        type: String,
+        trim: true,
+        required: [true, 'Firstname field must be required'],
+    },
+
+    lastName: {
+        type: String,
+        trim: true,
+        required: [true, 'Lastname field must be required'],
+    },
+
     isActive: {
         type: Boolean,
         default: true,
