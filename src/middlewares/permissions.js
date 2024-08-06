@@ -22,9 +22,10 @@ module.exports = {
         403,
       );
     }
+    next();
   },
   isStaffOrisAdmin: (req, res, next) => {
-    if (!(req.user.isAdmin || req.user.isStaff)) {
+    if (!(req.user?.isAdmin || req.user?.isStaff)) {
       throw new CustomError(
         "AuthorizationError: You must be an Admin or Staff to access this resource.",
         403,
@@ -52,12 +53,12 @@ module.exports = {
     }
     next();
   },
-  isActive: (req, res, next) => {
-    if (!req.user?.isActive) {
-      throw new CustomError(
-        "Your account is not active. Please contact support.",
-        403,
-      );
-    }
-  },
+  // isActive: (req, res, next) => {
+  //   if (!req.user?.isActive) {
+  //     throw new CustomError(
+  //       "Your account is not active. Please contact support.",
+  //       403,
+  //     );
+  //   }
+  // },
 };

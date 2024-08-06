@@ -20,7 +20,7 @@ module.exports = async function () {
     console.log("user couldn't add");
     console.log(error);
   }
-  /*
+  /* ------------------------- */
   try {
     const cars = require("../mokeData/car.json");
     const Car = require("../models/car");
@@ -39,5 +39,4 @@ module.exports = async function () {
     console.log("reservation couldn't add");
     console.log(error);
   }
-  */
 };
