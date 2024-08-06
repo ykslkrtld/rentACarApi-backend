@@ -36,7 +36,7 @@ app.use(require('./src/middlewares/authentication'))
 app.use(require('./src/middlewares/logger'))
 
 // res.getModelList():
-app.use(require('./src/middlewares/findSearchSortPage'))
+app.use(require('./src/middlewares/queryHandler'))
 
 /* ------------------------------------------------------- */
 // Routes:

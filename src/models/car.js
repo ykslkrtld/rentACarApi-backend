@@ -1,8 +1,6 @@
-"use strict"
+"use strict";
 /* -------------------------------------------------------
     | FULLSTACK TEAM | NODEJS / EXPRESS |
-------------------------------------------------------- */
-const { mongoose } = require('../configs/dbConnection')
 /* ------------------------------------------------------- *
 {
     "plateNumber": "34ABC123",
@@ -30,4 +28,22 @@ const { mongoose } = require('../configs/dbConnection')
     "isPublish": false
 }
 /* ------------------------------------------------------- */
+const { mongoose } = require("../configs/dbConnection");
+const uniqueValidator = require("mongoose-unique-validator");
+// Car Model:
+
+const CarSchema = new mongoose.Schema(
+  {},
+  {
+    collection: "cars",
+    timestamps: true,
+  },
+);
+
+CarSchema.plugin(uniqueValidator, {
+  message: "This {PATH} is exist",
+});
+// Export:
+
+module.exports = mongoose.model("Car", CarSchema);
 // Car Model:

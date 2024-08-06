@@ -16,7 +16,7 @@ const rootDirectory = path.resolve(__dirname, "../..");
 const logDirectory = path.join(rootDirectory, "logs");
 
 if (!fs.existsSync(logDirectory)) {
-  console.log("Logs folder heas been created ");
+  console.log("Logs folder has been created ");
   fs.mkdirSync(logDirectory, { recursive: true });
 } else console.log("Logs folder is exist");
 
