@@ -15,51 +15,60 @@
     "endDate": "2024-10-18",
     "amount": 50,
     "createdId": "64c5ed12345a123456789013",
-    "updatedId": "64c5ed12345a123456789018"
+    "updatedId": "64c5ed12345a123456789012"
   },
   {
     "userId": "64c5ed12345a123456789014",
     "carId": "64c5ed12345a12345678901b",
     "startDate": "2024-10-14",
     "endDate": "2024-10-20",
-    "amount": 300,
+    "amount": 360,
     "createdId": "64c5ed12345a123456789014",
-    "updatedId": "64c5ed12345a123456789014"
+    "updatedId": "64c5ed12345a123456789011"
+  },
+  {
+    "userId": "64c5ed12345a123456789015",
+    "carId": "64c5ed12345a12345678901b",
+    "startDate": "2024-10-09",
+    "endDate": "2024-10-12",
+    "amount": 180,
+    "createdId": "64c5ed12345a123456789015",
+    "updatedId": "64c5ed12345a123456789015"
   },
   {
     "userId": "64c5ed12345a123456789013",
     "carId": "64c5ed12345a12345678901c",
     "startDate": "2024-10-21",
     "endDate": "2024-10-29",
-    "amount": 400,
+    "amount": 800,
     "createdId": "64c5ed12345a123456789013",
     "updatedId": "64c5ed12345a123456789013"
   },
   {
-    "userId": "64c5ed12345a123456789013",
+    "userId": "64c5ed12345a123456789015",
     "carId": "64c5ed12345a12345678901c",
     "startDate": "2024-10-13",
     "endDate": "2024-10-15",
-    "amount": 100,
-    "createdId": "64c5ed12345a123456789013",
-    "updatedId": "64c5ed12345a123456789013"
+    "amount": 200,
+    "createdId": "64c5ed12345a123456789015",
+    "updatedId": "64c5ed12345a123456789015"
   },
   {
-    "userId": "64c5ed12345a123456789013",
+    "userId": "64c5ed12345a123456789014",
     "carId": "64c5ed12345a12345678901c",
     "startDate": "2024-10-11",
     "endDate": "2024-10-12",
-    "amount": 50,
-    "createdId": "64c5ed12345a123456789013",
-    "updatedId": "64c5ed12345a123456789013"
+    "amount": 100,
+    "createdId": "64c5ed12345a123456789014",
+    "updatedId": "64c5ed12345a123456789011"
   },
   {
-    "userId": "64c5ed12345a123456789018",
+    "userId": "64c5ed12345a123456789013",
     "carId": "64c5ed12345a12345678901f",
     "startDate": "2024-10-23",
     "endDate": "2024-10-25",
-    "amount": 100,
-    "createdId": "64c5ed12345a123456789018",
-    "updatedId": "64c5ed12345a123456789018"
+    "amount": 200,
+    "createdId": "64c5ed12345a123456789013",
+    "updatedId": "64c5ed12345a123456789011"
   }
 ]

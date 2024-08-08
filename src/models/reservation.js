@@ -65,6 +65,12 @@ const ReservationSchema = new mongoose.Schema(
     timestamps: true,
   },
 );
-
+ReservationSchema.set("toJSON", {
+  transform: (doc, ret) => {
+    ret.id = ret._id;
+    delete ret._id;
+    delete ret.__v;
+  },
+});
 // Export:
 module.exports = mongoose.model("Reservation", ReservationSchema);

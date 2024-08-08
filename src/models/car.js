@@ -93,6 +93,14 @@ const CarSchema = new mongoose.Schema(
   },
 );
 
+CarSchema.set("toJSON", {
+  transform: (doc, ret) => {
+    ret.id = ret._id;
+    delete ret._id;
+    delete ret.__v;
+  },
+});
+
 CarSchema.plugin(uniqueValidator, {
   message: "This {PATH} is exist",
 });

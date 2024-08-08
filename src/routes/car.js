@@ -11,7 +11,9 @@ const car = require("../controllers/car");
 
 // URL: /cars
 
-router.route("/").get(car.list).post(isStaffOrisAdmin, car.create);
+router.route("/")
+  .get(car.list)
+  .post(isStaffOrisAdmin, car.create);
 
 router
   .route("/:id")

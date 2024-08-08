@@ -25,6 +25,6 @@ module.exports = (startDate, endDate) => {
     throw new CustomError("Dates must not be in the past", 400);
   }
   const diffTime = Math.abs(end - start);
-  const reservedDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-  return [start, end, reservedDays];
+  const totalDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+  return [totalDays, start, end];
 };

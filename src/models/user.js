@@ -31,7 +31,7 @@ const UserSchema = new mongoose.Schema(
       trim: true,
       required: true,
       set: (password) => passwordEncrypt(password),
-      // select:false // passwordu getirmez user çağırıldığında
+      // select:false
     },
 
     email: {
